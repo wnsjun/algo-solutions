@@ -1,12 +1,11 @@
 def solution(sizes):
-    max_w=0
-    max_h=0
+    w_max=0
+    h_max=0
     
     for w,h in sizes:
-        big=max(w,h)
-        small=min(w,h)
-        max_w=max(max_w,big)
-        max_h=max(max_h,small)
+        w_max=max(w_max,max(w,h))
+        h_max=max(h_max,min(w,h))
         
-    answer=max_w*max_h
+    answer= w_max* h_max
+    
     return answer
