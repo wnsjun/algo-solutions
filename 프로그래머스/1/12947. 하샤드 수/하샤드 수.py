@@ -1,3 +1,6 @@
 def solution(x):
-    digit_sum = sum(int(i) for i in str(x))
-    return x % digit_sum == 0
+    sum=0
+    for i in str(x):
+        sum+=int(i)
+        
+    return x%sum==0
