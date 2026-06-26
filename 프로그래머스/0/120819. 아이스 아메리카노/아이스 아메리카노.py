@@ -1,7 +1,3 @@
 def solution(money):
-    answer = []
-    cup=money//5500
-    answer.append(cup)
-    remain=money%5500
-    answer.append(remain)
+    answer=[money//5500, money%5500]
     return answer
