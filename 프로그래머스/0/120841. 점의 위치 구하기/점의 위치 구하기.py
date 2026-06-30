@@ -4,7 +4,7 @@ def solution(dot):
             return 3
         else:
             return 2
-    if dot[0]>0:
+    else:
         if dot[1]<0:
             return 4
         else:
