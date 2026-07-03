@@ -4,6 +4,6 @@ def solution(my_string):
     for i in my_string:
         if ('0'<=i<='9'):
             answer.append(int(i))
-            answer.sort()
-    
+            
+    answer.sort()
     return answer
